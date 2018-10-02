@@ -1,0 +1,33 @@
+<div class="numpad-container">
+    <div class="numpad-output-container">
+        <p class="numpad-output" id="numpad-output">$0</p>
+    </div>
+    <div class="numpad-number-container">
+        <table>
+            <tr>
+                <td><a href="#" (click)="appnum($event)">1</a></td>
+                <td><a href="#" (click)="appnum($event)">2</a></td>
+                <td><a href="#" (click)="appnum($event)">3</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" (click)="appnum($event)">4</a></td>
+                <td><a href="#" (click)="appnum($event)">5</a></td>
+                <td><a href="#" (click)="appnum($event)">6</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" (click)="appnum($event)">7</a></td>
+                <td><a href="#" (click)="appnum($event)">8</a></td>
+                <td><a href="#" (click)="appnum($event)">9</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" (click)="appdot($event)">.</a></td>
+                <td><a href="#" (click)="appnum($event)">0</a></td>
+                <td>
+                    <a href="#" (click)="delnum($event)">
+                        <fa-icon [icon]="faDel"></fa-icon>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

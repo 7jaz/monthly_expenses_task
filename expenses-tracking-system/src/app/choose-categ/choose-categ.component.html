@@ -1,0 +1,14 @@
+<div class="categ-list-container">
+  <ul class="list-unstyled choose-categ-list">
+      <li
+      *ngFor="let categ of categs"
+      [ngClass]="{'selected': categ.name === selectedCateg}"
+      >
+      <div class="clickable" (click)="onCategClicked($event)" [attr.id]="categ.name"></div>
+        <div class="circle">
+          <fa-icon [icon]="categ.icon"></fa-icon>
+        </div>
+        <div class="categ-name">{{categ.name}}</div>
+      </li>
+  </ul>
+</div>

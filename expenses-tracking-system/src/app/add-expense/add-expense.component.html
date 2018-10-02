@@ -1,0 +1,13 @@
+<div class="add-expense slide-down" id="add-expense">
+    <div class="header">
+        <div class="title">Category</div>
+        <div 
+        class="close" 
+        (click)="close()" 
+        >
+        X</div>
+    </div>
+    <app-choose-categ></app-choose-categ>
+    <app-numpad></app-numpad>
+    <button class="add" (click)="addExpense()">Add Expense</button>
+</div>

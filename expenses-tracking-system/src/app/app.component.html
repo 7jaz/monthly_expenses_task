@@ -1,0 +1,14 @@
+<app-total-expenses></app-total-expenses>
+<ul class="list-group categ-list-group">
+  <li
+  *ngFor="let categ of categs"
+  class="list-group-item"
+  >
+        <app-expenses-categ
+        [category]="categ"
+        >
+        </app-expenses-categ>
+  </li>
+</ul>
+<app-foot></app-foot>
+<app-add-expense></app-add-expense>
