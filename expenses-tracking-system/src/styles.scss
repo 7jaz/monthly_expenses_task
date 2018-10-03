@@ -42,6 +42,9 @@ fa-icon{
         .main-icon{
             margin-right: 1rem;
         }    
+        &:hover{
+            z-index: -1;
+        }
     }
 }
 .inline-block{
@@ -67,7 +70,7 @@ fa-icon{
     bottom: 0;
     width: 100%;
     margin: 0;
-    z-index: 10;
+    //z-index: 1;
 
     border-top:1px solid $lightgrey;
     *{
@@ -85,7 +88,7 @@ fa-icon{
         font-size: 2rem;
         position: relative;
         top: -15px;
-        z-index: 10;
+        z-index: 1;
         text-align: center;
     }
         
